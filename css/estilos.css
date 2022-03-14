@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@1&family=Roboto+Mono:ital,wght@1,300;1,500&display=swap');/*font-family: 'Arimo', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Mono:ital,wght@1,300;1,500&display=swap');/*font-family: 'Permanent Marker', cursive;*/
+
+*           {   margin: 0;
+                padding: 0;
+                border: 0;
+                text-align: center;
+                -webkit-text-size-adjust: none;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box; 
+                font-family: sans-serif;
+                font-size: 1rem ; }
+
+body        {   background-color: papayawhip; }
+
+header      {   position: sticky;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 99;
+                border-bottom: 6px inset rgb(255, 255, 255); 
+                box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+                /*background-size: cover;*/ }
+
+footer      {   position: sticky;
+                bottom: 0;
+                right: 0;
+                z-index: 99;
+                border-top: 6px outset rgb(255, 255, 255); 
+                box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+                /*background-size: cover;*/ }
+
+header, 
+footer      {   padding: 20px 0px 14px 0px;
+                width: 100%;
+                background: #E3BEE3; }
+
+main        {   padding: 40px 0px 0px 0px; }
+
+.menu       {   padding: 20px 0px 0px 0px; }
+
+.galeria,
+.nos        {   text-align: center;
+                padding: 14px 20px 40px 20px; }
+
+.texto      {   font-family: 'Arimo', sans-serif; }/* Tipografia */
+
+h1, h2, h3  {   font-family: 'Permanent Marker', cursive; }/* Tipografia */
+
+h2, h3      {   font-size: 25px; }
+
+.img        {   width:160px;
+                height:160px;
+                border-radius:150px; 
+                border: 1px outset #000000; 
+                opacity: 90%; }
+
+.form > h3  {   margin-top: 46px;
+                padding: 0px 0px 36px 0px; }
+
+.form       {   margin: 5%;
+                padding: 36px 0px 127px 0px; }
+
+.col-12     {   margin-top: 70px;}
+
+h4          {   font-size: 16px;
+                font-stretch: narrower; }
+
+.tabla        { padding: 87px 15px 88px 15px; }                
+
+.btn:active {   color: aquamarine; }
+
+.nav-item > a { font-size: 18px; 
+                font-family: 'Permanent Marker', cursive; }
+
+.nav-item > a:link     { color: papayawhip; }
+
+.nav-item > a:visited, 
+.nav-item > a:focus  ,                 
+.nav-item > a:hover  , 
+.nav-item > a:active   { color: #CDFEAA; }
+
+/* The issue is because the   (.nav-item > a:hover)    is more specific than    (.navbar-nav > .active)
+   To fix this, remove the !important operator (as you should avoid it at all costs) and make the rule you want to override more specific.
+
+.navbar-nav > .active > a {
+  color: aqua;
+  background-color: chartreuse;    
+}
+.nav-item > a:hover {
+  color: aqua;
+}
+
+*/
